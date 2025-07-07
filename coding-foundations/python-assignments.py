@@ -23,23 +23,11 @@ print(name)
 print(score)
 
 # Flight Tracker - Make use of comments 
-
-# flight number
 flight_n = "BA0117"
-
-# destination of the flight
 destination = "New York"
-
-# istance to the destination
 distance = 1580
-
-# Displays flight number
 print(flight_n)
-
-# Displays destination
 print(destination)
-
-# Displays distance
 print(distance)
 
 # Snowflake - Debug the code 
@@ -64,6 +52,47 @@ new_salary = salary + pay_raise
 
 print(new_salary)
 
+#Chatbot vs1 - Ask the user's name and siplay it on the screen
+
+name = input()
+print(name)
 
 
+#Messaging app - Ask the user for their name and age and display it on the screen
 
+name = input()
+print(name)
+age = input()
+print(age)
+
+#Chatbot vs1.1 - Use string concatenation to join string and display message
+name = input()
+message = "Nice to meet you, " + name
+print(message)
+
+#Finance app - Complete the code to take the savings, calculate the end amount, then display a message on the screen
+
+savings = input()
+savings = float(savings)
+balance = savings * 1.05 
+balance = str(balance)
+message = "Amount in 1 year: " + balance
+print(message)
+
+#Chess Tournament -Convert the inputted values into numbers, then calculate and display score from player. 
+
+wins = int(input())
+ties = int(input())
+score = wins * 3 + ties
+print("Score: " + str(score))
+
+#Level Up!- Complete the code to display True if score is greater than 100
+
+score = int(input())
+print(score > 100)  
+
+#Fitness Goals! - Display true is steps is greater than 10000 or active minutes is greater than 30
+
+steps = int(input())
+active_minutes = int(input())
+print(steps >= 10000 or active_minutes >= 30)
