@@ -1,0 +1,179 @@
+
+:root {
+  --pastel-red:    #ff9a9e;
+  --pastel-orange: #ffcc9a;
+  --pastel-yellow: #fff59a;
+  --pastel-green:  #a9ff9a;
+  --pastel-blue:   #9acbff;
+  --pastel-indigo: #c09aff;
+  --pastel-violet: #ff9ae1;
+  --primary: var(--pastel-blue);
+  --text: #333;
+  --bg: var(--pastel-indigo);
+  --radius: 6px;
+  --transition: 0.3s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  line-height: 1.5;
+  animation: fadeIn 1s;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  position: relative;
+  animation: slideDown 1s ease-out;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+
+header {
+  background: var(--pastel-yellow);
+  color: var(--pastel-violet);
+  padding: 1.5rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--pastel-red);
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  background-color: var(--pastel-green);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--pastel-blue);
+    font-weight: bold;
+}
+
+
+main img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 200px;
+  animation: float 4s ease-in-out infinite;
+}
+
+
+main p {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+
+.features ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.features li {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 1.2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform var(--transition);
+}
+
+.features li:hover {
+  transform: translateY(-5px);
+}
+
+
+.order {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  animation: fadeIn 1s 0.5s both;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 2px solid #ddd;
+  border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background: var(--pastel-orange);
+  color: white;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.submit-btn:hover {
+  background: #3677d9;
+  transform: scale(1.03);
+}
+
+@keyframes float {
+  0%, 100%   { transform: translateY(0); }
+  50%        { transform: translateY(-15px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
