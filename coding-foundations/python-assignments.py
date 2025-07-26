@@ -110,21 +110,14 @@ for i in range(3):
     print("Fasten your seat belt")
 
 #Times Up! - Create a timer program  - This one keeps failing the test...
-# take the number as input
+
 number = int(input())
 
-#use a while loop for the countdown
+
 while number > 0:
     print(number)
     number -= 1
 
-# take the number as input
-number = int(input())
-
-# use a while loop for the countdown
-while number >= 0:
-    print(number, end=' ')
-    number -= 1
 
 # Cell Growth - Calculate cell population at the end of each day
 

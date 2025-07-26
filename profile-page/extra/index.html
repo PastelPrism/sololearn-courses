@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Doe's Profile</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+ 
+  <ul id="profile">
+    <li>
+      <img src="https://blob.sololearn.com/courses/ava.png" alt="John Doe’s Avatar">
+    </li>
+    <li>
+      <h2>John Doe</h2>
+    </li>
+    <li>
+      <p>USA</p>
+    </li>
+    <li>25 Followers</li>
+    <li>20 Following</li>
+    <li>⭐️ 1581 XP</li>
+  </ul>
+
+  <div id="streak">
+    <p>Streak</p>
+    <ul>
+      <li data-day="0">M</li>
+      <li data-day="1">T</li>
+      <li data-day="2">W</li>
+      <li data-day="3">T</li>
+      <li data-day="4">F</li>
+      <li data-day="5">S</li>
+      <li data-day="6">S</li>
+    </ul>
+    <p class="current">
+      Current Streak: <span id="current-count">0</span>
+    </p>
+    <p class="longest">
+      Longest Streak: <span id="longest-count">0</span>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
